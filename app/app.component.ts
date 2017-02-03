@@ -16,7 +16,11 @@ export class AppComponent {
   activeUser: User;
 
   selectUser(user) {
-      this.activeUser = user;
-      console.log(this.activeUser);
+    this.activeUser = user;
+    console.log(this.activeUser);
+  }
+
+  onUserCreated(event) {
+    this.users.push(event.user);
   }
 }
